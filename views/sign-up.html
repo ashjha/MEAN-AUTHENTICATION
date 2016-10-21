@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' /> 
+</head>
+<body ng-app='signupApp' ng-controller='signupCtrl'>
+<div class="login">  
+  <h1>Registration</h1>
+  <form ng-submit='addUsr()' name='rags'>
+    <input type="text" ng-model='usr.name' name="fn" placeholder="Username" required="required" />
+    <input type="email" ng-model='usr.email' name="ei" placeholder="Email-Id" required="required" />
+    <input type="password" ng-model='usr.password' name="cn" placeholder="Password" required="required" />
+    <button type="submit" class="btn btn-primary btn-block btn-large">Sign Up !</button>
+    Already have account ?<a href="/" >Log in</a>
+  </form> 
+</div>
+</body>
+  <script type="text/javascript" src='/javascripts/angular.min.js'></script>
+  <script type="text/javascript" src='/javascripts/sign-up.ctrl.js'></script>
+</html>

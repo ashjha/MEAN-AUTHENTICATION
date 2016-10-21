@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' /> 
+
+</head>
+<body ng-app='loginApp' ng-controller='loginCtrl'>
+  
+<div class="login">  
+  <h1>Login</h1>
+  <form ng-submit='login()' name='rags'>   
+    <input type="text" ng-model='usr.username' name="ei" placeholder="Username/Email-Id" required="required" />
+    <input type="password" ng-model='usr.password' name="cn" placeholder="Password" required="required" />
+    <button type="submit" class="btn btn-primary btn-block btn-large">Login!</button>
+    Don't have account ?<a href="/sign-up" >Sign-up</a>
+  </form> 
+</div>
+</body>
+  <script type="text/javascript" src='/javascripts/angular.min.js'></script>
+  <script type="text/javascript" src='/javascripts/login.ctrl.js'></script>
+</html>
