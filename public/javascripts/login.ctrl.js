@@ -6,7 +6,7 @@ app.controller('loginCtrl', function($scope, $http,$window) {
          if(res.data.success){
              $window.location.href ='/pet-selection';
          }else {
-             alert("Somthing wrong please try again");
+             alert(res.data.d||"Somthing wrong please try again");
              console.log(res);
          }
        },function(res){
